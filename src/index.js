@@ -15,7 +15,7 @@ app.listen(PORT);
 // app.use(cors());
 // app.use(morgan("dev"));
 
-app.use(paymentRoutes);
+app.use(paymentRoutes); // call all route create in payment.routes.js
 
 // app.use(express.static(path.resolve("./src/public")));
 
