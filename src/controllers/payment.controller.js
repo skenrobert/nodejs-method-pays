@@ -35,7 +35,8 @@ export const createOrder = async (req, res) => {
 
     // Generate an access token
     const { //request with axios for create access_token
-      data: { access_token }, //Oauth 2.0 authentication
+      data //Oauth 2.0 authentication
+      // data: { access_token }, //Oauth 2.0 authentication
     } = await axios.post(
       // https://api-m.paypal.com/v2/checkout/orders really api paypal
       "https://api-m.sandbox.paypal.com/v1/oauth2/token",// test domain 
@@ -51,7 +52,8 @@ export const createOrder = async (req, res) => {
       }
     );
 
-    console.log(access_token);
+    console.log(data);
+    // console.log(access_token);
 
     // make a request
     // const response = await axios.post( //request with axios create the orders

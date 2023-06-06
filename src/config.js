@@ -7,6 +7,8 @@ export const PAYPAL_API_SECRET = process.env.PAYPAL_API_SECRET; //variable envir
 export const PAYPAL_API = process.env.PAYPAL_API; // url sandbox or live for your app
 
 // console.log(PAYPAL_API);
+// console.log(PAYPAL_API_CLIENT);
+// console.log(PAYPAL_API_SECRET);
 
 // Server
 export const PORT = process.env.PORT || 3000;
