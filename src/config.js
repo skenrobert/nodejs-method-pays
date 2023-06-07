@@ -11,7 +11,7 @@ export const PAYPAL_API = process.env.PAYPAL_API; // url sandbox or live for you
 // console.log(PAYPAL_API_SECRET);
 
 // Server
-export const PORT = process.env.PORT || 3000;
+export const PORT = process.env.PORT || 4000;
 export const HOST =
   process.env.NODE_ENV === "production"
     ? process.env.HOST

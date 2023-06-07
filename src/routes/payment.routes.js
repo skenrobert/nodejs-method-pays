@@ -7,9 +7,9 @@ import {
 
 const router = Router();
 
-router.get('/create-route', (req, res) => res.send('test route'))
+router.get('/', (req, res) => res.send('test route'))
 
-router.post("/create-order", createOrder);
+router.get("/create-order", createOrder);
 
 router.get("/capture-order", captureOrder);
 
