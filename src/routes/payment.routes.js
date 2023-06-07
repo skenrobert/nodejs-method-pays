@@ -7,7 +7,6 @@ import {
 
 const router = Router();
 
-// router.get('/', (req, res) => res.redirect("/index.html"))
 
 router.get('/test', (req, res) => res.send('test route'))
 

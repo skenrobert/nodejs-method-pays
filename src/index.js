@@ -7,12 +7,12 @@ import { PORT } from "./config.js";
 import paymentRoutes from "./routes/payment.routes.js"; //make this module create with .js in the end is in express
 
 const app = express();
+app.use(cors());
+app.use(morgan("dev"));
 
 // app.listen(3000);
 // console.log('server on port', 3000)
 
-app.use(cors());
-app.use(morgan("dev"));
 
 app.use(paymentRoutes); // call all route create in payment.routes.js
 
